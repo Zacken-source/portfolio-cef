@@ -1,35 +1,51 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+//Test function app with bootstrap and breakpoint
 
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <Router>
+      <header className="bg-dark text-white py-4">
+        <div className="container">
+          <h1>Portfolio John Doe</h1>
+        </div>
+      </header>
 
-export default App
+      <main className="container py-5">
+        <h2>Bienvenue</h2>
+        <p>Ceci est un test pour vérifier que Bootstrap et Nunito Sans fonctionnent.</p>
+        
+        <button className="btn btn-primary me-2">Bouton Primaire</button>
+        <button className="btn btn-secondary">Bouton Secondaire</button>
+
+        <div className="row mt-5">
+          <div className="col-md-4">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Colonne 1</h5>
+                <p className="card-text">Texte de test avec Nunito Sans.</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Colonne 2</h5>
+                <p className="card-text">Texte de test avec Nunito Sans.</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Colonne 3</h5>
+                <p className="card-text">Texte de test avec Nunito Sans.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </Router>
+  );
+}
