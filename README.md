@@ -1,114 +1,128 @@
-# portfolio-cef
+# 🎨 Portfolio John Doe
 
-Portfolio de présentation pour recherche d'emploi en alternance.
+Portfolio professionnel développé avec React, Vite et Bootstrap.
 
-##  Objectif
+![Portfolio Preview](./screenshots/preview.png)
 
-Site personnel pour présenter les compétences et réalisations en développement web.
+## 📋 Description
 
-##  Technologies
+Portfolio personnel présentant mes compétences, services et réalisations en développement web. Le site est entièrement responsive et optimisé pour le SEO.
 
-- **Framework** : React 18
-- **Build** : Vite
-- **Styling** : Bootstrap 5 + CSS personnalisé
-- **Routing** : React Router v6
-- **API** : GitHub API
+## ✨ Fonctionnalités
 
-##  Prérequis
+- ✅ Navigation fluide avec React Router
+- ✅ Design responsive (mobile, tablette, desktop)
+- ✅ Intégration API GitHub
+- ✅ Formulaire de contact avec validation
+- ✅ Optimisation SEO
+- ✅ Validation W3C
 
-- Node.js (v16 ou supérieur)
-- npm ou yarn
+## 🛠️ Technologies utilisées
 
-##  Installation et lancement
+- **React 18** - Bibliothèque JavaScript pour l'interface
+- **Vite** - Build tool rapide
+- **React Router v6** - Navigation côté client
+- **Bootstrap 5** - Framework CSS
+- **Axios** - Requêtes HTTP
+- **Google Fonts** - Police Nunito Sans
+
+## 📦 Prérequis
+
+Avant de commencer, assurez-vous d'avoir installé :
+
+- **Node.js** (version 16 ou supérieure)
+- **npm** ou **yarn**
+- Un éditeur de code (VS Code recommandé)
+
+Vérifier les versions :
 ```bash
-# 1. Cloner le repository
-git clone https://github.com/[votreusername]/portfolio-john-doe.git
+node --version  # Doit afficher v16.x.x ou plus
+npm --version   # Doit afficher 8.x.x ou plus
+```
+
+## 🚀 Installation
+
+### 1. Cloner le repository
+```bash
+git clone https://github.com/TON-USERNAME/portfolio-john-doe.git
 cd portfolio-john-doe
-
-# 2. Installer les dépendances
-npm install
-
-# 3. Lancer le serveur de développement
-npm run dev
-
-# 4. Ouvrir dans le navigateur
-# http://localhost:5173
 ```
 
-##  Build pour production
+### 2. Installer les dépendances
 ```bash
-npm run build
-npm run preview
+npm install
 ```
 
-##  Structure du projet
+### 3. Configurer les variables d'environnement
+
+Créez un fichier `.env` à la racine :
+```env
+VITE_GITHUB_USERNAME=votre-username
+VITE_API_URL=https://api.github.com
 ```
+
+### 4. Lancer le serveur de développement
+```bash
+npm run dev
+```
+
+Ouvrez [http://localhost:5173](http://localhost:5173) dans votre navigateur.
+
+## 📂 Structure du projet
+
 portfolio-john-doe/
+├── public/              # Fichiers statiques
+│   └── favicon.ico
 ├── src/
-│   ├── components/
-│   │   ├── Header.jsx
-│   │   ├── Footer.jsx
-│   │   ├── Card.jsx
-│   │   └── Modal.jsx
-│   ├── pages/
+│   ├── assets/          # Images, logos
+│   ├── components/      # Composants réutilisables
+│   │   ├── common/      # Composants génériques (Card, Button)
+│   │   └── layout/      # Layout (Header, Footer)
+│   ├── pages/           # Pages du site
 │   │   ├── Home.jsx
 │   │   ├── Services.jsx
 │   │   ├── Portfolio.jsx
 │   │   ├── Contact.jsx
 │   │   └── LegalNotice.jsx
-│   ├── styles/
-│   │   ├── main.css
-│   │   └── variables.css
-│   ├── assets/
-│   │   ├── images/
-│   │   └── icons/
-│   ├── App.jsx
-│   └── main.jsx
-├── public/
-├── .env.example
+│   ├── styles/          # Fichiers CSS
+│   ├── data/            # Données statiques
+│   ├── App.jsx          # Composant racine
+│   ├── main.jsx         # Point d'entrée
+│   └── index.css        # Styles globaux
+├── .env                 # Variables d'environnement (à créer)
+├── .gitignore
 ├── package.json
+├── vite.config.js
 └── README.md
+
+## 🎨 Scripts disponibles
+```bash
+npm run dev          # Lancer le serveur de développement
+npm run build        # Créer la version de production
+npm run preview      # Prévisualiser la build de production
+npm run lint         # Vérifier le code avec ESLint
 ```
 
-##  Validation
+## 🌐 Déploiement
 
-Le code a été validé selon les normes W3C.
-Voir les screenshots de validation dans le dossier `/screenshots`.
+Le projet peut être déployé sur :
 
-##  Apprentissages
+- **Vercel** (recommandé)
+- **Netlify**
+- **GitHub Pages**
 
-Ce projet a mobilisé les compétences suivantes :
-- Développement front-end avec React
-- Responsive Design et Bootstrap
-- SEO et optimisation web
-- Normes W3C et accessibilité
-
-##  Licence
-
-Projet créé dans le cadre d'une formation développeur web.
-
-##  Crédits
-
-- Images : [Pixabay](https://pixabay.com/)
-- Favicon : [Flaticon](https://www.flaticon.com/)
-- Framework : [Bootstrap](https://getbootstrap.com/)
-
----
-
-**Développé par John Doe | 2024**
+### Déploiement sur Vercel
+```bash
+npm install -g vercel
+vercel
 ```
 
----
+## ✅ Validation W3C
 
-##  **Résumé de la semaine 1 (Setup)**
+Le code HTML et CSS a été validé avec succès :
+- [W3C HTML Validator](https://validator.w3.org/)
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-**Tes premières tâches (priorité absolue) :**
+## 📄 Licence
 
-1.  Créer le repo GitHub
-2.  Initialiser React + Vite
-3.  Installer Bootstrap
-4.  Configurer Google Fonts (Nunito Sans)
-5.  Mettre en place React Router
-6.  Créer la structure des dossiers
-7.  Écrire le README.md
-8.  Faire les premiers commits explicites
+Ce projet est sous licence MIT.
