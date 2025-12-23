@@ -8,6 +8,9 @@ export default defineConfig({
     port: 5173,
     open: true,
     strictPort: false,
+    fs: {
+      allow: ['.','./node_modules/bootstrap-icons']
+    },
   },
 
   build: {

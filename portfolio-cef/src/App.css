@@ -4,7 +4,15 @@
   padding: 2rem;
   text-align: center;
 }
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
+.flex-grow-1 {
+  flex-grow: 1;
+}
 .nav-link.active {
   font-weight: 600;
   text-decoration: underline;

@@ -7,13 +7,11 @@ function Header() {
     <header className="header">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
-          
-          {/* Logo/Nom */}
+
           <NavLink className="navbar-brand fw-bold" to="/">
             JOHN DOE
           </NavLink>
 
-          {/* Bouton hamburger pour mobile */}
           <button 
             className="navbar-toggler" 
             type="button" 
@@ -26,7 +24,6 @@ function Header() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          {/* Menu de navigation */}
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               
