@@ -1,26 +1,17 @@
-import React, { useState } from 'react';
-import GitHubModal from '../components/common/GitHubModal';
+import React from 'react';
+import SkillsSection from '../components/common/SkillSection';
 
 function Home() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   return (
-    <div className="container mt-5">
-      <h1>Bienvenue</h1>
+    <div>
+      <section className="hero-section">
+        <div className="container">
+          <h1>Bienvenue sur mon portfolio</h1>
+        </div>
+      </section>
 
-      <button 
-        className="btn btn-primary"
-        onClick={() => setIsModalOpen(true)}
-      >
-        <i className="bi bi-github me-2"></i>
-        Voir mon profil GitHub
-      </button>
+      <SkillsSection />
 
-      <GitHubModal
-        username="Zacken-source"
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
     </div>
   );
 }

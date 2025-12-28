@@ -1,0 +1,64 @@
+.skill-bar-wrapper {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideInLeft 0.6s ease forwards;
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.skill-bar-wrapper:nth-child(1) { animation-delay: 0.1s; }
+.skill-bar-wrapper:nth-child(2) { animation-delay: 0.2s; }
+.skill-bar-wrapper:nth-child(3) { animation-delay: 0.3s; }
+.skill-bar-wrapper:nth-child(4) { animation-delay: 0.4s; }
+.skill-bar-wrapper:nth-child(5) { animation-delay: 0.5s; }
+.skill-bar-wrapper:nth-child(6) { animation-delay: 0.6s; }
+.skill-bar-wrapper:nth-child(7) { animation-delay: 0.7s; }
+.skill-bar-wrapper:nth-child(8) { animation-delay: 0.8s; }
+
+.skill-name {
+  font-size: 1rem;
+  color: #212529;
+}
+
+.skill-level {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.skill-progress {
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.skill-progress .progress-bar {
+  font-weight: 600;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  transition: width 1s ease-in-out;
+}
+
+.skill-bar-wrapper:hover .progress-bar {
+  filter: brightness(1.1);
+}
+
+@media (max-width: 768px) {
+  .skill-name {
+    font-size: 0.9rem;
+  }
+
+  .skill-progress {
+    height: 1.2rem;
+  }
+
+  .skill-progress .progress-bar {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+  }
+}
