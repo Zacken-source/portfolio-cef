@@ -13,23 +13,23 @@ function Footer() {
             <address className="mb-3">
               <p className="mb-2">
                 <i className="bi bi-geo-alt-fill me-2"></i>
-                40 Rue Laure Diebold
+                6 rue de la bataille
               </p>
               <p className="mb-2">
                 <i className="bi bi-geo-alt-fill me-2"></i>
-                69009 Lyon, France
+                69000 Lyon, France
               </p>
               <p className="mb-2">
                 <i className="bi bi-telephone-fill me-2"></i>
-                <a href="tel:+33610203040" className="text-white text-decoration-none">
-                  06 10 20 30 40
+                <a href="tel:+33612345678" className="text-white text-decoration-none">
+                  06 12 34 56 78
                 </a>
               </p>
             </address>
 
             <div className="social-links mt-3">
               <a 
-                href="https://github.com/ton-username" 
+                href="https://github.com/zacken-source" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="social-link me-3"
@@ -47,7 +47,7 @@ function Footer() {
                 <i className="bi bi-twitter fs-4"></i>
               </a>
               <a 
-                href="https://linkedin.com/in/ton-username" 
+                href="www.linkedin.com/in/chereaudemedina" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="social-link"
@@ -100,19 +100,19 @@ function Footer() {
               <li className="mb-2">
                 <Link to="/portfolio" className="footer-link">
                   <i className="bi bi-chevron-right me-2"></i>
-                  Fresh Food - Site e-commerce
+                  Application React
                 </Link>
               </li>
               <li className="mb-2">
                 <Link to="/portfolio" className="footer-link">
                   <i className="bi bi-chevron-right me-2"></i>
-                  Restaurant Akira - Site vitrine
+                  Port-Folio React
                 </Link>
               </li>
               <li className="mb-2">
                 <Link to="/portfolio" className="footer-link">
                   <i className="bi bi-chevron-right me-2"></i>
-                  Espace bien-être - Application web
+                  Jeu RPG Golang
                 </Link>
               </li>
             </ul>
