@@ -14,10 +14,6 @@
   animation-fill-mode: forwards;
 }
 
-/* ========================================
-   SERVICE CARDS
-   ======================================== */
-
 .service-card {
   background: #fff;
   border-radius: 1rem;
@@ -34,7 +30,6 @@
   background-color: #efefef;
 }
 
-/* Icône */
 .service-icon i {
   transition: all 0.3s ease;
 }
@@ -43,21 +38,18 @@
   transform: scale(1.2) rotate(5deg);
 }
 
-/* Titre */
 .service-title {
   font-size: 1.25rem;
   font-weight: 600;
   color: #212529;
 }
 
-/* Description */
 .service-description {
   font-size: 0.95rem;
   line-height: 1.6;
   flex-grow: 1;
 }
 
-/* Liste des features */
 .service-features {
   font-size: 0.9rem;
 }
@@ -70,10 +62,6 @@
   transform: translateX(5px);
   color: #0d6efd;
 }
-
-/* ========================================
-   CTA SECTION
-   ======================================== */
 
 .cta-section {
   border-top: 3px solid #0d6efd;
@@ -94,10 +82,6 @@
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
 }
-
-/* ========================================
-   ANIMATIONS
-   ======================================== */
 
 @keyframes fadeInDown {
   from {
@@ -121,7 +105,6 @@
   }
 }
 
-/* Animation d'entrée pour les cards */
 .service-card {
   opacity: 0;
   animation: fadeInUp 0.6s ease forwards;
@@ -131,10 +114,6 @@
 .service-card:nth-child(2) { animation-delay: 0.2s; }
 .service-card:nth-child(3) { animation-delay: 0.3s; }
 .service-card:nth-child(4) { animation-delay: 0.4s; }
-
-/* ========================================
-   RESPONSIVE
-   ======================================== */
 
 @media (max-width: 768px) {
   .services-header h1 {

@@ -1,0 +1,140 @@
+.portfolio-header {
+  background: linear-gradient(135deg, #212529 0%, #495057 100%);
+}
+
+.portfolio-filters .btn {
+  transition: all 0.3s ease;
+}
+
+.portfolio-filters .btn:hover {
+  transform: translateY(-2px);
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-image-wrapper {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-links {
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-links {
+  transform: translateY(0);
+}
+
+.project-links .btn {
+  transition: all 0.2s ease;
+}
+
+.project-links .btn:hover {
+  transform: scale(1.1);
+}
+
+.project-content {
+  background: #fff;
+}
+
+.project-title {
+  font-weight: 600;
+  color: #212529;
+}
+
+.project-description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  min-height: 60px;
+}
+
+.project-technologies .badge {
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid #dee2e6;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+}
+
+.project-card {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.project-card:nth-child(1) { animation-delay: 0.1s; }
+.project-card:nth-child(2) { animation-delay: 0.2s; }
+.project-card:nth-child(3) { animation-delay: 0.3s; }
+.project-card:nth-child(4) { animation-delay: 0.4s; }
+.project-card:nth-child(5) { animation-delay: 0.5s; }
+.project-card:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-header h1 {
+    font-size: 2rem;
+  }
+
+  .project-image-wrapper {
+    height: 200px;
+  }
+
+  .portfolio-filters .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
