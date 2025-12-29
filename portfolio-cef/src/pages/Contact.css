@@ -1,0 +1,134 @@
+.contact-header {
+  background-color: #f8f9fa;
+}
+
+.header-underline {
+  width: 200px;
+  height: 4px;
+  background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+  margin-top: 1rem;
+}
+
+.section-title {
+  font-weight: 600;
+  color: #212529;
+  position: relative;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid #0d6efd;
+}
+
+.contact-form-wrapper {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #dee2e6;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.form-control.is-invalid:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.form-control::placeholder {
+  color: #6c757d;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-form-wrapper .btn-primary {
+  padding: 0.875rem;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.contact-form-wrapper .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+.contact-info-wrapper {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info .info-item {
+  font-size: 1rem;
+  color: #495057;
+}
+
+.contact-info .info-item a {
+  color: #212529;
+  transition: color 0.3s ease;
+}
+
+.contact-info .info-item a:hover {
+  color: #0d6efd;
+}
+
+.map-wrapper {
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.map-wrapper iframe {
+  display: block;
+}
+
+.alert {
+  border-radius: 0.5rem;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-form-wrapper,
+  .contact-info-wrapper {
+    padding: 1.5rem;
+  }
+
+  .map-wrapper iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}

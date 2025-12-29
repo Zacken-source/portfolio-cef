@@ -3,7 +3,6 @@ import GitHubModal from '../components/common/GitHubModal';
 import SkillsSection from '../components/common/SkillSection';
 import './Home.css';
 
-// Import de l'image
 import heroImage from '../assets/images/hero-bg.jpg';
 
 function Home() {

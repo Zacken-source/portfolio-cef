@@ -13,11 +13,11 @@ function Footer() {
             <address className="mb-3">
               <p className="mb-2">
                 <i className="bi bi-geo-alt-fill me-2"></i>
-                6 rue de la bataille
+                6 rue bataille
               </p>
               <p className="mb-2">
                 <i className="bi bi-geo-alt-fill me-2"></i>
-                69000 Lyon, France
+                69008 Lyon, France
               </p>
               <p className="mb-2">
                 <i className="bi bi-telephone-fill me-2"></i>
