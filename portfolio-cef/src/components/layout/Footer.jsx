@@ -13,7 +13,7 @@ function Footer() {
             <address className="mb-3">
               <p className="mb-2">
                 <i className="bi bi-geo-alt-fill me-2"></i>
-                6 rue bataille
+                40 rue Laure Diebold
               </p>
               <p className="mb-2">
                 <i className="bi bi-geo-alt-fill me-2"></i>
@@ -21,8 +21,8 @@ function Footer() {
               </p>
               <p className="mb-2">
                 <i className="bi bi-telephone-fill me-2"></i>
-                <a href="tel:+33612345678" className="text-white text-decoration-none">
-                  06 12 34 56 78
+                <a href="tel:+33610203040" className="text-white text-decoration-none">
+                  06 10 20 30 40
                 </a>
               </p>
             </address>

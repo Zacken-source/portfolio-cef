@@ -244,18 +244,18 @@ function Contact() {
                   
                   <div className="info-item mb-2">
                     <i className="bi bi-geo-alt-fill text-primary me-2"></i>
-                    6 rue bataille
+                    40 rue Laure Diebold
                   </div>
 
                   <div className="info-item mb-2">
                     <i className="bi bi-geo-alt-fill text-primary me-2"></i>
-                    69008 Lyon, France
+                    69009 Lyon, France
                   </div>
 
                   <div className="info-item mb-2">
                     <i className="bi bi-telephone-fill text-primary me-2"></i>
-                    <a href="tel:+3312345678" className="text-decoration-none">
-                      12 34 56 78
+                    <a href="tel:+3310203040" className="text-decoration-none">
+                      10 20 30 40
                     </a>
                   </div>
 
@@ -270,7 +270,7 @@ function Contact() {
 
               <div className="map-wrapper">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.6310828951814!2d4.865025676209981!3d45.73849281509569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea09f99ca4cf%3A0x1b6aa7aa81567db3!2s6%20Rue%20Bataille%2C%2069008%20Lyon%2C%20France!5e0!3m2!1sfr!2sad!4v1767005836975!5m2!1sfr!2sad"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.6269694746748!2d4.794107988059091!3d45.77866563784744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb65edac5b3f%3A0xe01c47049cb2e2b9!2s40%20Rue%20Laure%20Diebold%2C%2069009%20Lyon%2C%20France!5e0!3m2!1sfr!2sad!4v1767008016213!5m2!1sfr!2sad"
                   width="100%"
                   height="400"
                   style={{ border: 0, borderRadius: '0.5rem' }}
