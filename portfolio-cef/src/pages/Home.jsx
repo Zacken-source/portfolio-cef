@@ -46,9 +46,16 @@ function Home() {
       <section className="about-section py-5">
         <div className="container">
           <div className="row align-items-center">
-
+          
             <div className="col-lg-6 mb-4 mb-lg-0">
               <h2 className="section-title mb-4">À propos de moi</h2>
+               <div className="about-image-wrapper">
+                <img 
+                  src="src\assets\images\img-pc.jpg" 
+                  alt="John Doe au travail"
+                  className="img-fluid rounded shadow-lg"
+                />
+              </div>
               <p className="lead mb-4">
                 Passionné par le développement web depuis plus de 5 ans, 
                 je crée des applications modernes et performantes.
@@ -62,21 +69,17 @@ function Home() {
                 et faciles à utiliser.
               </p>
             </div>
-
             <div className="col-lg-6">
-              <div className="about-image-wrapper">
-                <img 
-                  src="https://via.placeholder.com/500x400" 
-                  alt="John Doe au travail"
-                  className="img-fluid rounded shadow-lg"
-                />
-              </div>
+              <SkillsSection />
             </div>
+
+
+
 
           </div>
         </div>
       </section>
-      <SkillsSection />
+      
       <GitHubModal
         username="Zacken-source"
         isOpen={isModalOpen}

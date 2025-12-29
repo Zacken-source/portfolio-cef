@@ -36,10 +36,10 @@ function Contact() {
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!formData.email.trim()) {
+    if (!formData.e.trim()) {
       newErrors.email = "L'email est obligatoire";
-    } else if (!emailRegex.test(formData.email)) {
-      newErrors.email = "L'email n'est pas valide";
+    } else if (!eRegex.test(formData.email)) {
+      newErrors.email = "L'e n'est pas valide";
     }
 
     const phoneRegex = /^[0-9\s\-\+\(\)]{10,}$/;
@@ -159,7 +159,7 @@ function Contact() {
                   <div className="mb-3">
                     <input
                       type="email"
-                      className={`form-control ${errors.email ? 'is-invalid' : ''}`}
+                      className={`form-control ${errors.e ? 'is-invalid' : ''}`}
                       id="email"
                       name="email"
                       placeholder="Votre adresse email"

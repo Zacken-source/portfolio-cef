@@ -2,49 +2,31 @@ export const skills = [
   {
     id: 1,
     name: 'HTML5',
-    level: 95,
+    level: 90,
     color: 'danger'
   },
   {
     id: 2,
-    name: 'CSS3 / Sass',
-    level: 90,
-    color: 'primary'
-  },
-  {
-    id: 3,
-    name: 'JavaScript',
-    level: 85,
-    color: 'warning'
-  },
-  {
-    id: 4,
-    name: 'React',
+    name: 'CSS3',
     level: 80,
     color: 'info'
   },
   {
-    id: 5,
-    name: 'Bootstrap',
-    level: 90,
-    color: 'secondary'
+    id: 3,
+    name: 'JAVASCRIPT',
+    level: 70,
+    color: 'warning'
   },
   {
-    id: 6,
-    name: 'Node.js',
-    level: 75,
+    id: 4,
+    name: 'PHP',
+    level: 60,
     color: 'success'
   },
   {
-    id: 7,
-    name: 'Git / GitHub',
-    level: 85,
-    color: 'dark'
-  },
-  {
-    id: 8,
-    name: 'MySQL',
-    level: 70,
+    id: 5,
+    name: 'REACT',
+    level: 50,
     color: 'primary'
   }
 ];

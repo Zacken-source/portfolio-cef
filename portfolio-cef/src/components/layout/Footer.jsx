@@ -25,6 +25,12 @@ function Footer() {
                   06 10 20 30 40
                 </a>
               </p>
+              <div className="info-item">
+                  <i className="bi bi-envelope-fill me-2"></i>
+                  <a href="mailto:john.doe@gmail.com" className="text-decoration-none">
+                    john.doe@gmail.com
+                  </a>
+              </div>
             </address>
 
             <div className="social-links mt-3">
