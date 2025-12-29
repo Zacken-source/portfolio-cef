@@ -9,6 +9,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import LegalNotice from './pages/LegalNotice';
 
+
 import Footer from './components/layout/Footer';
 
 export default function App() {
